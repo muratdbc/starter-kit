@@ -1,0 +1,18 @@
+{
+  "name": "cleaning_quote",
+  "version": "1.0.0",
+  "description": "cleaning quote for CC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Murat and Lana",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-aria": "^1.6.9",
+    "angular-material": "^1.1.7",
+    "angular-messages": "^1.6.9"
+  }
+}
