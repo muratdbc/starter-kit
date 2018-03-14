@@ -3,8 +3,101 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cleaning Quote</title>
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
 </head>
-<body>
-	
+<body ng-app="CleaningQuote">
+	<div layout="row" layout-align="center center">
+		<md-input-container >
+	        <div layout="row" layout-align="center center"> Square Footage</div>
+	        <input aria-label="footage" ng-model="quote.footage" layout-align="center center">
+	      </md-input-container>
+	 	</div>
+ 	  <div layout="row" layout-align="center center">
+        <div>Number of Bedrooms</div>
+      </div>
+      <div layout="row" layout-align="center center">
+     	<md-select ng-model="quote.bedrooms" placeholder="Bedrooms">
+          <md-option value="one">1 bedroom</md-option>
+          <md-option value="two">2 bedroom</md-option>
+          <md-option value="three">3 bedroom</md-option>
+          <md-option value="four">4 bedroom</md-option>
+          <md-option value="five">5 bedroom</md-option>
+          <md-option value="six">6 bedroom</md-option>
+          <md-option value="seven">7 bedroom</md-option>
+          <md-option value="eight">8 bedroom</md-option>
+          <md-option value="nine">9 bedroom</md-option>
+          <md-option value="ten">10 bedroom</md-option>
+          <md-option value="eleven">11 bedroom</md-option>
+          <md-option value="twelve">12 bedroom</md-option>
+        </md-select>
+      </div>
+       <div layout="row" layout-align="center center">
+        <div>Number of Bathrooms</div>
+      </div>
+      <div layout="row" layout-align="center center">
+     	<md-select ng-model="quote.bathrooms" placeholder="Bathrooms">
+          <md-option value="one">1 bathrooms</md-option>
+          <md-option value="oneandhalf">1.5 bathrooms</md-option>
+          <md-option value="two">2 bathrooms</md-option>
+          <md-option value="twoandhalf">2.5 bathrooms</md-option>
+          <md-option value="three">3 bathrooms</md-option>
+          <md-option value="threeandhalf">3.5 bathrooms</md-option>
+          <md-option value="four">4 bathrooms</md-option>
+          <md-option value="fourandhalf">4.5 bathrooms</md-option>
+          <md-option value="five">5 bathrooms</md-option>
+          <md-option value="fiveandhalf">5.5 bathrooms</md-option>
+          <md-option value="six">6 bathrooms</md-option>
+        </md-select>
+      </div>
+      <div layout="row" layout-align="center center">
+        <div>Number of Beds</div>
+      </div>
+      <div layout="row" layout-align="center center">
+     	<md-select ng-model="quote.bed" placeholder="Beds">
+          <md-option value="onebed">1 bed</md-option>
+          <md-option value="twobeds">2 beds</md-option>
+          <md-option value="threebeds">3 beds</md-option>
+          <md-option value="fourbeds">4 beds</md-option>
+          <md-option value="fivebeds">5 beds</md-option>
+          <md-option value="sixbeds">6 beds</md-option>
+          <md-option value="sevenbeds">7 beds</md-option>
+          <md-option value="eightbeds">8 beds</md-option>
+          <md-option value="ninebeds">9 beds</md-option>
+          <md-option value="tenbeds">10 beds</md-option>
+          <md-option value="elevenbeds">11 beds</md-option>
+          <md-option value="twelvebeds">12 beds</md-option>
+        </md-select>
+      </div>
+      <div layout="row" layout-align="center center">
+        <div>Type of Cleaning</div>
+      </div>
+      <div layout="row" layout-align="center center">
+     	<md-select ng-model="quote.cleaningtype" placeholder="Cleaning Type">
+          <md-option value="normal">Normal Cleaning</md-option>
+          <md-option value="deep">Deep Cleaning</md-option>
+          <md-option value="light">Light Cleaning</md-option>
+        </md-select>
+      </div>
+      <div layout="row" layout-align="center center">
+        <div>Additional Notes</div>
+      </div>
+      <div layout="row" layout-align="center center">
+      <md-input-container>
+		  <textarea  ng-model="quote.notes" cdkAutosizeMinRows="10"
+            cdkAutosizeMaxRows="10"></textarea>
+	 </md-input-container>
+	</div>
+
+      
+      
+
+
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-messages/angular-messages.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
+	<script src="app.js"></script>
 </body>
+
 </html>
