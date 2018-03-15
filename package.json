@@ -4,15 +4,18 @@
   "description": "cleaning quote for CC",
   "main": "index.js",
   "scripts": {
+  	"start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Murat and Lana",
   "license": "ISC",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.15",
     "angular": "^1.6.9",
     "angular-animate": "^1.6.9",
     "angular-aria": "^1.6.9",
     "angular-material": "^1.1.7",
-    "angular-messages": "^1.6.9"
+    "angular-messages": "^1.6.9",
+    "node-static": "^0.7.10"
   }
 }
